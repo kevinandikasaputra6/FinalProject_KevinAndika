@@ -1,7 +1,17 @@
 import { Link } from "react-router-dom";
 import Assets from "../assets/index";
+function ButtonShow({ isShow }) {
+  if (isShow) {
+    return (
+      <Link to="/Cari" className="btn btn-success">
+        Mulai Sewa Mobil
+      </Link>
+    );
+  }
+  return "";
+}
 
-export default function Hero() {
+export default function Hero({ isButtonShow }) {
   return (
     <section id="hero" className="bg-red">
       {/* <!-- container digunakan untuk membatasi lebar content dengan ukuran paling besar adalah 1400px dan konten akan tetap ditengah layar --> */}
@@ -23,9 +33,7 @@ export default function Hero() {
                 kualitas terbaik dengan harga terjangkau. Selalu siap melayani
                 kebutuhanmu untuk sewa mobil selama 24 jam.
               </p>
-              <Link to="/cari" className="btn btn-success">
-                Mulai Sewa Mobil
-              </Link>
+              <ButtonShow isShow={isButtonShow} />
             </div>
           </div>
           <div className="col-12 col-md-6">

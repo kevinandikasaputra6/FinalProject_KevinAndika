@@ -55,7 +55,7 @@ export default function Cari() {
           <div className="card">
             <div className="card-body">
               <form className="row g-3 justify-content-center" id="form-search">
-                <div className="col-auto">
+                <div className="col-auto mx-4">
                   <label className="form-label">
                     Tipe Driver<span className="text-danger">*</span>
                   </label>

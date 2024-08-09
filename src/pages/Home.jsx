@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Navigation />
-      <Hero />
+      <Hero isButtonShow={true} />
       <section id="our-services">
         <div className="container py-5 my-5">
           {/* <!-- container digunakan di setiap section agar tampilan rapi dan konsisten -->

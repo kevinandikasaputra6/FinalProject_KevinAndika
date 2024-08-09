@@ -17,6 +17,7 @@ import service from './img_service.png'
 import User from './fi_users.svg'
 import Setting from './fi_settings.svg'
 import Calender from './fi_calendar.svg'
+import Mobil from "./mobil.png"
 
 
 export default {
@@ -38,5 +39,6 @@ export default {
     logo,
     User,
     Setting,
-    Calender
+    Calender,
+    Mobil
 }

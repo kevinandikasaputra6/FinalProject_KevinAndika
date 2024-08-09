@@ -1,13 +1,14 @@
 import React from "react";
 import Assets from "../assets/index";
+import { Link } from "react-router-dom";
 
 export default function Navigation() {
   return (
     <nav className="navbar navbar-expand-lg bg-red">
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <Link to="/">
           <img src={Assets.logo} alt="TMMIN Car Rental" />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -42,7 +43,9 @@ export default function Navigation() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="btn btn-success">Register</a>
+              <Link to="/register" className="btn btn-success">
+                Register
+              </Link>
             </li>
           </ul>
         </div>
