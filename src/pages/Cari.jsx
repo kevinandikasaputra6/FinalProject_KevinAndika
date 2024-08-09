@@ -73,7 +73,7 @@ export default function Cari() {
                     </option>
                   </select>
                 </div>
-                <div className="col-auto">
+                <div className="col-auto mx-4">
                   <label className="form-label">
                     Tanggal<span className="text-danger">*</span>
                   </label>
@@ -87,7 +87,7 @@ export default function Cari() {
                     onChange={(e) => handleChange(e)}
                   />
                 </div>
-                <div className="col-auto">
+                <div className="col-auto mx-4">
                   <label className="form-label">
                     Waktu / Jam Jemput<span className="text-danger">*</span>
                   </label>
@@ -106,7 +106,7 @@ export default function Cari() {
                     <option value="12">12.00</option>
                   </select>
                 </div>
-                <div className="col-auto">
+                <div className="col-auto mx-4">
                   <label className="form-label">
                     Jumlah Penumpang(optional)
                   </label>
@@ -119,7 +119,7 @@ export default function Cari() {
                     onChange={(e) => handleChange(e)}
                   />
                 </div>
-                <div className="col-auto">
+                <div className="col-auto mx-4">
                   <label className="form-label invisible">cari mobil</label>
                   <button
                     type="button"
