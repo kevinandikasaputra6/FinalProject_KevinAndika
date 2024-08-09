@@ -1,0 +1,176 @@
+/* menentukan font untuk keseluruhan web */
+/* html = root element / element inti / akar */
+html {
+  font-family: Helvetica, sans-serif;
+  font-size: 14px; /* ukuran font-size root element yang akan digunakan untuk menghitung unit rem*/
+  font-weight: 300;
+  line-height: 1.4rem; /* mengunakan unit rem untuk kebutuhan responsive | 1rem berarti 1 x ukuran font-size dari root-element / html | yang berarti 1.4rem = 1.4 x 14px, jadi kalau mau menganti ukuran seluruh tampilan tinggal mengganti ukuran font di html */
+  scroll-behavior: smooth;
+}
+
+/* start styling general */
+/* karena mengunakan ketebalan yang sama dari figma, kita bisa gabungkan untuk memimalisir penulisan ulang */
+.btn,
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+/* menentukan ukuran h1 */
+h1 {
+  font-size: 2.5rem; /* 2.5 * ukuran font di html */
+}
+
+h2 {
+  font-size: 1.7rem; /* 1.7 * ukuran font di html */
+}
+
+.bg-red {
+  background: #C74B40;
+}
+
+.bg-red .nav-link {
+  color: #fff;
+  font-weight: 400;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+/* end styling general */
+
+/* referensi untuk membuat custom bullet https://stackoverflow.com/questions/7698764/custom-bullet-symbol-for-li-elements-in-ul-that-is-a-regular-character-and */
+/* start styling untuk section our-service */
+#our-services ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+#our-services li {
+  display: flex;
+  text-indent: 0;
+  padding-bottom: 1em;
+  padding-left: 0;
+}
+
+#our-services li:before {
+  content: url(assets/check-bullet.svg);
+  padding-right: 1em;
+}
+/* end styling untuk section our-service */
+
+/* start styling untuk section why-us */
+#why-us h3 {
+  font-size: 1.1rem;
+}
+
+#why-us .card-body {
+  min-height: 200px; /* untuk card-body di why-us supaya memiliki ukuran minimal 200px agar tingginya sama */
+}
+/* end styling untuk section our-service */
+
+/* start styling untuk section testimonial */
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* memindahkan posisi prev next default dari swiper ke posisi bawah testimonial */
+.swiper-button-next,
+.swiper-button-prev {
+  position: static;
+  margin-top: 2rem;
+  color: #000;
+  background: #fff;
+  border: 1px solid #C4C4C4;
+  padding: 1em 1.2em;
+  width: auto;
+  height: auto;
+  border-radius: 100%;
+}
+
+/* mengatur ukuran icon prev next karena dibuat menggunakan font */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* styling untuk button prev next supaya kalau kursor ada di atas button maka background button berganti warna hijau */
+.swiper-button-next:hover,
+.swiper-button-next:focus,
+.swiper-button-prev:hover,
+.swiper-button-prev:focus {
+  background: #5CB85F;
+}
+/* styling untuk button prev next supaya kalau kursor ada di atas button maka text / icon button berganti warna putih */
+.swiper-button-next:hover:after,
+.swiper-button-next:focus:after,
+.swiper-button-prev:hover:after,
+.swiper-button-prev:focus:after {
+  color: white;
+}
+/* end styling untuk section testimonial */
+
+/* Start styling FAQ */
+.accordion-item{
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.accordion-item:first-of-type>.accordion-header .accordion-button{
+  border-radius: 0;
+}
+.accordion-item:not(:first-of-type){
+  border-top: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color)
+}
+/* End styling FAQ */
+
+/* Start styling Search */
+#search{
+  margin-top: -3rem;
+}
+
+#search-result .img-fluid{
+  height:250px;
+  object-fit: contain;
+}
+#search-result ul{
+  list-style: none;
+  padding-left: 0;
+}
+#search-result li{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+#search-result li img{
+  margin-right: 1rem;
+}
+/* End styling search */
+
+/* Start styling Footer */
+footer ul{
+  list-style: none;
+}
+footer li{
+  margin-bottom: 1rem;
+}
+footer a{
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+}
+/* End Styling Footer */
