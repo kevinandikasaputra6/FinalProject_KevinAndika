@@ -11,7 +11,6 @@ export default function Detail() {
   return (
     <>
       <Navigation />
-      <div className="bg-red"></div>
       <section id="search" className="mt-n5">
         <div className="container" style={{ marginTop: "100px" }}>
           <div className="card">
