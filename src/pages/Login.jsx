@@ -44,11 +44,11 @@ export default function Login() {
                 <Link
                   style={{
                     width: "100%",
-                    height: "50%",
+                    height: "100%",
                     border: "none",
                     outline: "none",
                     cursor: "pointer",
-                    borderRadius: "40px",
+                    borderRadius: "10px",
                     fontSize: "16px",
                     boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
                     color: "white",

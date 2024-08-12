@@ -148,8 +148,8 @@ export default function Home() {
               <h2>Frequently Asked Question</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             </div>
-            <div className="col-12 col-md-7">
-              <Accordion defaultActiveKey="0">
+            <div className="col-12 col-md-6">
+              <Accordion defaultActiveKey="">
                 <Accordion.Item eventKey="0">
                   <Accordion.Header>
                     Apa saja syarat yang dibutuhkan?

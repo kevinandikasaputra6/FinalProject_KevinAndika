@@ -1,4 +1,5 @@
 function getRandomInt(min, max) {
+  
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -6,6 +7,7 @@ function getRandomInt(min, max) {
   
   const populateCars = (cars) => {
     return cars.map((car) => {
+      
       const isPositive = getRandomInt(0, 1) === 1;
       const timeAt = new Date();
       const mutator = getRandomInt(1000000, 100000000);
@@ -24,6 +26,7 @@ function getRandomInt(min, max) {
   };
   
   const listCars = async (filterer) => {
+    
     let cars;
     let cachedCarsString = localStorage.getItem("CARS");
   
