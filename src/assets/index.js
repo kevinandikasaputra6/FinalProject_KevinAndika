@@ -18,6 +18,8 @@ import User from './fi_users.svg'
 import Setting from './fi_settings.svg'
 import Calender from './fi_calendar.svg'
 import Mobil from "./mobil.png"
+import Date from './fi_datee.svg'
+import Clock from './fi_clock.svg'
 
 
 export default {
@@ -40,5 +42,7 @@ export default {
     User,
     Setting,
     Calender,
-    Mobil
+    Mobil,
+    Date,
+    Clock
 }

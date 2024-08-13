@@ -1,5 +1,4 @@
 function getRandomInt(min, max) {
-  
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -26,7 +25,6 @@ function getRandomInt(min, max) {
   };
   
   const listCars = async (filterer) => {
-    
     let cars;
     let cachedCarsString = localStorage.getItem("CARS");
   
@@ -46,6 +44,7 @@ function getRandomInt(min, max) {
     if (filterer instanceof Function) return cars.filter(filterer);
   
     return cars;
+    console.log(cars.filter);
   };
   
   export { listCars };

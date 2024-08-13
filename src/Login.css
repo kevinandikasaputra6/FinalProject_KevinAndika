@@ -95,3 +95,40 @@
 .register-link p Link:hover {
     text-decoration: underline;
 }
+
+.input-wrap {
+  position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 250px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+  }
+
+  .form-control {
+    width: 290px;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    color: gray;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .row.g-3 {
+    gap: 6px;
+  }
+  
+  

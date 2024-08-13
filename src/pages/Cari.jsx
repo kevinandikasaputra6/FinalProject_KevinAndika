@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import Footer from "../components/Footer";
 import { listCars } from "../utils/getCars";
 import Assets from "../assets/index";
+import { BiFontSize } from "react-icons/bi";
 
 export default function Cari() {
   const [cars, setCars] = useState(null);
@@ -52,21 +53,30 @@ export default function Cari() {
       <Hero />
       <section id="search" className="mt-n5">
         <div className="container">
-          <div className="card">
+          <div className="card" style={{ borderRadius: "10px" }}>
             <div className="card-body">
               <form className="row g-3 justify-content-center" id="form-search">
                 <div className="col-auto mx-4">
-                  <label className="form-label">
+                  <label className="form-label" style={{ color: "grey" }}>
                     Tipe Driver<span className="text-danger">*</span>
                   </label>
                   <select
+                    style={{
+                      width: "180px",
+                      height: "50px",
+                      padding: "10px",
+                      border: "2px solid #ccc",
+                      borderRadius: "5px",
+                      fontSize: "16px",
+                      color: "gray",
+                    }}
                     className="form-select"
                     id="tipedriver"
                     name="typeDriver"
                     required
                     onChange={(e) => handleChange(e)}
                   >
-                    <option>Pilih Tipe Driver</option>
+                    <option style={{ color: "red" }}>Pilih Tipe Driver</option>
                     <option value="Dengan Supir">Dengan Sopir</option>
                     <option value="Lepas Kunci">
                       Tanpa Sopir (Lepas Kunci)
@@ -74,31 +84,47 @@ export default function Cari() {
                   </select>
                 </div>
                 <div className="col-auto mx-4">
-                  <label className="form-label">
+                  <label className="form-label" style={{ color: "grey" }}>
                     Tanggal<span className="text-danger">*</span>
                   </label>
                   <input
+                    style={{
+                      width: "180px",
+                      height: "50px",
+                      padding: "10px",
+                      border: "2px solid #ccc",
+                      borderRadius: "5px",
+                      color: "gray",
+                    }}
                     type="date"
                     id="tanggal"
                     name="tanggal"
                     className="form-control"
-                    placeholder="Pilih Tanggal"
                     required
                     onChange={(e) => handleChange(e)}
                   />
                 </div>
                 <div className="col-auto mx-4">
-                  <label className="form-label">
-                    Waktu / Jam Jemput<span className="text-danger">*</span>
+                  <label className="form-label" style={{ color: "grey" }}>
+                    Waktu Jemput/Ambil<span className="text-danger">*</span>
                   </label>
                   <select
+                    style={{
+                      width: "180px",
+                      height: "50px",
+                      padding: "10px",
+                      border: "2px solid #ccc",
+                      borderRadius: "5px",
+                      fontSize: "16px",
+                      color: "gray",
+                    }}
                     className="form-select"
                     id="jam"
                     name="jam"
                     required
                     onChange={(e) => handleChange(e)}
                   >
-                    <option>Pilih Jam Jemput</option>
+                    <option>Pilih Waktu</option>
                     <option value="8">08.00</option>
                     <option value="9">09.00</option>
                     <option value="10">10.00</option>
@@ -107,21 +133,36 @@ export default function Cari() {
                   </select>
                 </div>
                 <div className="col-auto mx-4">
-                  <label className="form-label">
+                  <label className="form-label" style={{ color: "grey" }}>
                     Jumlah Penumpang(optional)
                   </label>
-                  <input
-                    type="number"
-                    id="penumpang"
-                    className="form-control"
-                    placeholder="Jumlah Penumpang"
-                    name="capacity"
-                    onChange={(e) => handleChange(e)}
-                  />
+                  <div className="input-wrap">
+                    <input
+                      style={{
+                        width: "280px",
+                        height: "50px",
+                        padding: "10px",
+                        border: "2px solid #ccc",
+                        borderRadius: "5px",
+                      }}
+                      type="number"
+                      id="penumpang"
+                      className="form-control"
+                      placeholder="Jumlah Penumpang"
+                      name="capacity"
+                      onChange={(e) => handleChange(e)}
+                    />
+                    <img
+                      src={Assets.User}
+                      alt="User Icon"
+                      className="input-icon"
+                    />
+                  </div>
                 </div>
                 <div className="col-auto mx-4">
                   <label className="form-label invisible">cari mobil</label>
                   <button
+                    style={{ width: "100px", height: "50px" }}
                     type="button"
                     id="cari"
                     className="btn btn-success d-block"
@@ -148,8 +189,11 @@ export default function Cari() {
                         alt={e.name}
                       />
                       <div className="card-body">
-                        <h6>{e.name}</h6>
-                        <label>{e.price}</label>
+                        <h1>{e.name}</h1>
+                        <label style={{ fontSize: "25px", fontWeight: "600" }}>
+                          Rp. {new Intl.NumberFormat("id-ID").format(e.price)}/
+                          hari
+                        </label>
                         <p>
                           Lorem ipsum dolor sit amet consectetur adipisicing
                           elit. Tempora, accusamus!
