@@ -56,7 +56,7 @@ export default function Cari() {
           <div className="card" style={{ borderRadius: "10px" }}>
             <div className="card-body">
               <form className="row g-3 justify-content-center" id="form-search">
-                <div className="col-auto mx-4">
+                <div className="col-12 col-md-3 mx-5">
                   <label className="form-label" style={{ color: "grey" }}>
                     Tipe Driver<span className="text-danger">*</span>
                   </label>
@@ -83,7 +83,7 @@ export default function Cari() {
                     </option>
                   </select>
                 </div>
-                <div className="col-auto mx-4">
+                <div className="col-12 col-md-3 mx-5">
                   <label className="form-label" style={{ color: "grey" }}>
                     Tanggal<span className="text-danger">*</span>
                   </label>
@@ -104,7 +104,7 @@ export default function Cari() {
                     onChange={(e) => handleChange(e)}
                   />
                 </div>
-                <div className="col-auto mx-4">
+                <div className="col-12 col-md-3 mx-5">
                   <label className="form-label" style={{ color: "grey" }}>
                     Waktu Jemput/Ambil<span className="text-danger">*</span>
                   </label>
@@ -132,7 +132,7 @@ export default function Cari() {
                     <option value="12">12.00</option>
                   </select>
                 </div>
-                <div className="col-auto mx-4">
+                <div className="col-12 col-md-3 mx-5">
                   <label className="form-label" style={{ color: "grey" }}>
                     Jumlah Penumpang(optional)
                   </label>
@@ -159,7 +159,7 @@ export default function Cari() {
                     />
                   </div>
                 </div>
-                <div className="col-auto mx-4">
+                <div className="col-12 col-md-3 mx-5">
                   <label className="form-label invisible">cari mobil</label>
                   <button
                     style={{ width: "100px", height: "50px" }}

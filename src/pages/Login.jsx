@@ -8,11 +8,17 @@ export default function Login() {
   return (
     <>
       <div className="container py-5 my-5">
-        <div className="row align-items-center">
-          <div className="col-12 col-md-6 mb-5 mb-md-0">
+        <div className="row">
+          <div className="col-12 col-md-6 d-flex align-items-end">
             <img src={Assets.Mobil} className="img-fluid" alt="" />
+            <h2
+              style={{ color: "white" }}
+              className="position-absolute mt-auto p-5"
+            >
+              TMMIN CAR RENTAL
+            </h2>
           </div>
-          <div className="col-12 col-md-6 mb-5 mb-md-0">
+          <div className="col-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
             <div className="wrapper">
               <form action="">
                 <h1>Masuk</h1>
